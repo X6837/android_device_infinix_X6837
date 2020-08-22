@@ -61,6 +61,10 @@ on late-init
 # mount different fs start
 
 on charger
+    # Turn backlight on and switch to backlight trigger
+    write /sys/class/leds/lcd-backlight/brightness "1000"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
+
     chmod 0660 /dev/spm
     chown system system /dev/spm
     start spm_script
