@@ -195,6 +195,9 @@ ro.vendor.mtk_log_hide_gps=1
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.kmsetkey=trustonic
 
+# MTE
+arm64.memtag.process.system_server=off
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.md_c2k_cap_dep_check=0
