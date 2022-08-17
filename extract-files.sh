@@ -71,6 +71,9 @@ function blob_fixup {
         vendor/bin/hw/mt6789/camerahalserver)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
+            "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.vibrator-service.mediatek)
             "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "$2"
             ;;
