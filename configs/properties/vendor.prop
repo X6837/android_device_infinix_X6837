@@ -127,6 +127,7 @@ debug.sf.earlyGl.app.duration=20000000
 debug.sf.hwc.min.duration=23000000
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
+ro.surface_flinger.uclamp.min=130
 ro.hardware.egl=meow
 ro.hardware.hwcomposer=mtk_common
 ro.hardware.gralloc=common
