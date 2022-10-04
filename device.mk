@@ -409,6 +409,11 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
+# Power | Dummy mtkperf lib
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
