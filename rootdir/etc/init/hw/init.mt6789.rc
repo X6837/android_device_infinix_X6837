@@ -31,13 +31,8 @@ on early-init && property:ro.build.type=userdebug
 on init
     write /proc/bootprof "INIT:init"
 
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
-
     # if primary storage is physical, set ro.vold.primary_physical to 1
     # setprop ro.vold.primary_physical 1
-
-    mkdir /mnt/cd-rom 0000 system system
 
 #MD:add XLQYXLQS-5252 for tranfs by xiaoxiang.xiong 20220404 start
 mkdir /tranfs 0771 system system
@@ -111,10 +106,6 @@ on fs
     write /sys/kernel/tracing/trace_marker "E"
     write /proc/bootprof "INIT:Mount_END"
 
-on fs
-
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
-
 on late-fs
     write /proc/bootprof "INIT:late-fs"
     wait_for_prop hwservicemanager.ready "true"
@@ -128,9 +119,6 @@ on late-fs
 
 on post-fs
     write /proc/bootprof "INIT:post-fs"
-
-    # Support legacy paths
-    symlink /sdcard /storage/sdcard0
 
     #change permissions for mediaserver
     chown root media /proc/clkmgr/mipi_test
