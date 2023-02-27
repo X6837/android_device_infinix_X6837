@@ -106,5 +106,11 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
 TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/configs/properties/system.prop
 TARGET_VENDOR_PROP += $(CONFIGS_PATH)/configs/properties/vendor.prop
 
+# Recovery
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6789
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_USERIMAGES_USE_F2FS := true
+
 # Inherit the proprietary files
 include vendor/infinix/X6837/BoardConfigVendor.mk
