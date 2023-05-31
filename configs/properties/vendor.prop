@@ -90,13 +90,14 @@ ro.vendor.camera_tran_hal_server_support=1
 ro.vendor.camera_tran_fake_stereo_support=1
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,tw.nekomimi.nekogram
 
-# Connsys
+# Connsys / FM
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
 persist.vendor.connsys.patch.version=-1
 ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
 ro.vendor.connsys.dedicated.log=1
 vendor.connsys.driver.ready=no
+ro.vendor.builtin_fm_antenna_support=1
 
 # Data
 persist.vendor.factory.GB2312=no
