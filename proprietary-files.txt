@@ -1,5 +1,9 @@
 # Unpinned blobs from from sys_tssi_64_armv82_infinix-user 13 TP1A.220624.014 605023 release-keys
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
 # Audio
 vendor/etc/AudioLog_dynamic.xml
 vendor/bin/audiocmdservice_atci
