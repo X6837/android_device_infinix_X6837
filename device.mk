@@ -169,7 +169,7 @@ PRODUCT_PACKAGES += \
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
-    
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -187,7 +187,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery
+    android.hardware.health@2.1-impl.recovery \
+    charger_res_images_vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
