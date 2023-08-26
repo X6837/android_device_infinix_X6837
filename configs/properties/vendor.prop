@@ -28,6 +28,10 @@ persist.vendor.xfrm_support=1
 # APK Verity
 ro.apk_verity.mode=2
 
+# ART 
+dalvik.vm.dex2oat-minidebuginfo=false
+dalvik.vm.minidebuginfo=false
+
 # Audio
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
