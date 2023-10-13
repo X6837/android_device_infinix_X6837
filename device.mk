@@ -5,7 +5,7 @@
 #
 
 DEVICE_PATH := device/infinix/X6837
-
+KERNEL_PATH := $(DEVICE_PATH)-kernel
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
