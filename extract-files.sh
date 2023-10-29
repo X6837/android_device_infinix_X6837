@@ -61,6 +61,11 @@ function blob_fixup {
             ;;
         lib64/libsink.so)
             "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
+            ;;
+        vendor/lib*/libwvhidl.so|\
+        vendor/lib*/mediadrm/libwvdrmengine.so)
+            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
+            ;;
         vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|\
         vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
         vendor/lib64/mt6789/libaalservice.so|\
