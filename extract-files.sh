@@ -59,9 +59,6 @@ function blob_fixup {
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
             ;;
-        lib64/libsink.so)
-            "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
-            ;;
         vendor/lib*/libwvhidl.so|\
         vendor/lib*/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
