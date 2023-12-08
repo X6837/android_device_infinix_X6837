@@ -469,6 +469,12 @@ vendor/firmware/soc_fm_v1_patch.bin
 vendor/firmware/txpowerctrl.cfg
 vendor/firmware/wifi.cfg
 
+# Gatekeeper
+vendor/lib/hw/libMcGatekeeper.so
+vendor/lib/libMcClient.so
+vendor/lib64/hw/libMcGatekeeper.so
+vendor/lib64/libMcClient.so
+
 # Power
 -vendor/etc/vintf/manifest/power-default.xml:vendor/etc/vintf/manifest/power-mtk.xml
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
