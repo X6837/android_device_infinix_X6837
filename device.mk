@@ -265,6 +265,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Updatable APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.infinix
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     wpa_supplicant \
