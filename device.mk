@@ -160,6 +160,10 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
     libcppbor_external.vendor:64
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.infinix
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor:64
