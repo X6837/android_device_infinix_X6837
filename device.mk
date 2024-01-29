@@ -153,6 +153,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
+# Engineermode
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/system-ext-permissions-com.mediatek.engineermode.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/system-ext-permissions-com.mediatek.engineermode.xml
+
 # FastbootD
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
