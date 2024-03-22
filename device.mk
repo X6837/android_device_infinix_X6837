@@ -87,9 +87,8 @@ PRODUCT_PACKAGES += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-service \
-    android.hardware.boot@1.2-impl:64 \
-    android.hardware.boot@1.2-impl.recovery
+    com.android.hardware.boot \
+    android.hardware.boot-service.default_recovery
 
 # Camera
 PRODUCT_PACKAGES += \
