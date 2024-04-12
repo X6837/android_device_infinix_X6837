@@ -42,7 +42,6 @@ vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
 vendor/lib/libbwc.so
 vendor/lib/libcvsd_mtk.so
-vendor/lib/libfsmaudio.so
 vendor/lib/libladder.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtklimiter_vendor.so
@@ -73,7 +72,6 @@ vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libbwc.so
 vendor/lib64/libcvsd_mtk.so
-vendor/lib64/libfsmaudio.so
 vendor/lib64/libladder.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtklimiter_vendor.so
@@ -198,11 +196,6 @@ vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
 vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
-vendor/etc/audio_param/preset_default.bin
-vendor/etc/audio_param/preset_music.bin
-vendor/etc/audio_param/preset_ringtone.bin
-vendor/etc/audio_param/preset_voice.bin
-vendor/etc/audio_param/preset_voip.bin
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
@@ -390,23 +383,16 @@ vendor/lib64/hw/fpsensor_fingerprint.default.so
 
 # Firmware
 vendor/firmware/BT_FW.cfg
+vendor/firmware/Conf_MultipleTest_01.ini
+vendor/firmware/Conf_MultipleTest_02.ini
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
 vendor/firmware/WMT_SOC.cfg
-vendor/firmware/aw8622x_haptic.bin
-vendor/firmware/aw8622x_osc_rtp_12K_10s.bin
-vendor/firmware/aw8622x_rtp.bin
-vendor/firmware/aw8624_haptic.bin
-vendor/firmware/aw8624_osc_rtp_24K_5s.bin
-vendor/firmware/aw8624_rtp.bin
-vendor/firmware/aw8624_rtp_lighthouse.bin
-vendor/firmware/aw8624_rtp_silk.bin
+vendor/firmware/aw87xxx_acf.bin
+vendor/firmware/awinic_params.bin
 vendor/firmware/fm_cust.cfg
-vendor/firmware/fs1599.fsm
-vendor/firmware/fs3001_1.bin
-vendor/firmware/fs3001_2.bin
-vendor/firmware/fs3001_haptic.bin
-vendor/firmware/fs3001_osc_rtp_12K_10s.bin
+vendor/firmware/focaltech_ts_fw_01.bin
+vendor/firmware/focaltech_ts_fw_02.bin
 vendor/firmware/gt9886_cfg_6781v01.bin
 vendor/firmware/gt9886_cfg_6785v96.bin
 vendor/firmware/gt9886_cfg_6785v99.bin
@@ -468,9 +454,11 @@ vendor/firmware/gt9896s_firmware_6893v04.bin
 vendor/firmware/gt9896s_firmware_6893v05.bin
 vendor/firmware/gt9896s_firmware_6895v01.bin
 vendor/firmware/gt9896s_firmware_6983v01.bin
-vendor/firmware/ilitek_ts_fw.bin
+vendor/firmware/ilitek_ts_fw_00.bin
+vendor/firmware/ilitek_ts_fw_03.bin
 vendor/firmware/lib3a.ccu
-vendor/firmware/mp.ini
+vendor/firmware/mp_00.ini
+vendor/firmware/mp_03.ini
 vendor/firmware/mt6627_fm_v1_coeff.bin
 vendor/firmware/mt6627_fm_v1_patch.bin
 vendor/firmware/mt6630_fm_v1_coeff.bin
@@ -489,7 +477,6 @@ vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_fw_144.bin
 vendor/firmware/novatek_ts_fw_jdi.bin
 vendor/firmware/novatek_ts_fw_tm.bin
-vendor/firmware/novatek_ts_mp.bin
 vendor/firmware/remoteproc_scp
 vendor/firmware/soc2_2_ram_bt_1d_1_hdr.bin
 vendor/firmware/soc2_2_ram_bt_1e_1_hdr.bin
@@ -499,6 +486,7 @@ vendor/firmware/soc2_2_ram_wifi_1d_1_hdr.bin
 vendor/firmware/soc2_2_ram_wifi_1e_1_hdr.bin
 vendor/firmware/soc_fm_v1_coeff.bin
 vendor/firmware/soc_fm_v1_patch.bin
+vendor/firmware/txpowerctrl.cfg
 vendor/firmware/wifi.cfg
 
 # Fuelgauge
@@ -988,8 +976,10 @@ vendor/lib64/libksensor.so
 # TEE
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
-vendor/app/mcRegistry/030c0000000000000000000000000000.drbin
-vendor/app/mcRegistry/030c0000000000000000000000000000.tlbin
+vendor/app/mcRegistry/031c0000000000000000000000000000.drbin
+vendor/app/mcRegistry/031c0000000000000000000000000000.tlbin
+vendor/app/mcRegistry/05060000000000000000000000000000.tabin
+vendor/app/mcRegistry/05070000000000000000000000000000.drbin
 vendor/app/mcRegistry/05120000000000000000000000000001.drbin
 vendor/app/mcRegistry/05120000000000000000000000000001.tlbin
 vendor/app/mcRegistry/06090000000000000000000000000000.drbin
