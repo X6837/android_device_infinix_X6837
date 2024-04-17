@@ -152,6 +152,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := X6837,Infinix-X6837
 
+# Selinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := 2023-10-05
 
