@@ -258,9 +258,10 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
-	FrameworksResOverlay \
-	SettingsResOverlay \
-	TelephonyOverlay
+    FrameworksResOverlay \
+    SettingsResOverlay \
+    SystemUIOverlay \
+    TelephonyOverlay 
 
 # Permissions
 PRODUCT_COPY_FILES += \
