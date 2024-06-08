@@ -327,12 +327,9 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek \
     android.hardware.power-V2-ndk.vendor \
-    android.hardware.power@1.2.vendor \
+    android.hardware.power@1.3.vendor \
     libmtkperf_client_vendor \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 PRODUCT_COPY_FILES += \
