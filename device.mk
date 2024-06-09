@@ -87,6 +87,15 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl:64 \
     android.hardware.boot@1.2-impl.recovery
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.provider@2.6.vendor
+
+PRODUCT_PACKAGES += \
+    libdng_sdk.vendor
+
 # Dalvik configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
