@@ -1357,7 +1357,6 @@ vendor/etc/dts/current_speaker48k
 vendor/etc/dts/current_usb44k
 vendor/etc/dts/current_usb48k
 vendor/etc/dts/customer.cfg
-vendor/etc/dts/dts-eagle.lic
 vendor/etc/dts/dts_audio_settings
 vendor/etc/dts/games_accessory44
 vendor/etc/dts/games_accessory48
@@ -1809,7 +1808,6 @@ vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
-vendor/lib/libvpu.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib64/AVCSecureVdecCA.so
