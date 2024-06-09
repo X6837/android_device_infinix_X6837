@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
 # Allow userspace reboots
 $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
@@ -206,7 +210,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor
+    libcodec2_soft_common.vendor \
+    libflatbuffers-cpp.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -216,6 +221,12 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Misc
+PRODUCT_PACKAGES += \
+    libchrome.vendor \
+    libruy.vendor \
+    libtextclassifier_hash.vendor
+    
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
