@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/X6833B
+DEVICE_PATH := device/infinix/X6837
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
@@ -46,7 +46,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := x6833b
+TARGET_BOOTLOADER_BOARD_NAME := x6837
 TARGET_NO_BOOTLOADER := true
 
 # Broken Rules
@@ -150,7 +150,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := X6833B,Infinix-X6833B
+TARGET_OTA_ASSERT_DEVICE := X6837,Infinix-X6837
 
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := 2023-10-05
@@ -203,4 +203,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Inherit the proprietary files
-include vendor/infinix/X6833B/BoardConfigVendor.mk
+include vendor/infinix/X6837/BoardConfigVendor.mk
