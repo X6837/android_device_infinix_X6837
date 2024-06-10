@@ -931,6 +931,16 @@ vendor/lib/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 
 # Camera (Required Blobs)
+vendor/bin/mt6789/dumpfaultd.mt6789
+vendor/bin/mt6789/jpegtool
+vendor/etc/anc_siq/cache_gc32e1_17201856_front_g97
+vendor/etc/anc_siq/cache_s5khm6sx_17201842_back_g97
+vendor/etc/anc_siq/dgain_mask_gc32e1_17201856_front_g97.bin
+vendor/etc/anc_siq/dgain_mask_s5khm6sx_17201842_back_g97.bin
+vendor/etc/anc_siq/siq_ocl_cache_gc32e1_17201856_front_g97
+vendor/etc/anc_siq/siq_ocl_cache_s5khm6sx_17201842_back_g97
+vendor/etc/anc_siq/superiq_model_gc32e1_17201856_front_g97
+vendor/etc/anc_siq/superiq_model_s5khm6sx_17201842_back_g97
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/HEVCSecureVdecCA.so
 vendor/lib/libAVCSecureVencCA.so
@@ -990,6 +1000,10 @@ vendor/lib/mt6789/s5khm6sx_mipi_raw_tuning.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/HEVCSecureVdecCA.so
+vendor/lib64/lib3a.ae.pipe.so
+vendor/lib64/libaal_cust.so
+vendor/lib64/libaal_key.so
+vendor/lib64/libaal_mtk.so
 vendor/lib64/libaibld.so
 vendor/lib64/libaipe_bokeh.so
 vendor/lib64/libancbase.so
@@ -1016,13 +1030,17 @@ vendor/lib64/libispcameraca.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
 vendor/lib64/libjpeg-alpha_vendor.so
 vendor/lib64/libJpgEncPipe.so
+vendor/lib64/libprotobuf-cpp-full-3.9.1.so
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/librgbwlightsensor.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libTranAutoColorLevel.so
 vendor/lib64/libtrancamJsonConvertor.so
 vendor/lib64/libtrancam_filelockmgr.so
 vendor/lib64/libTranExtImgThread.so
+vendor/lib64/libtranssion_forkexecwrap.so
 vendor/lib64/libTranVideoSupeNightYuv.so
+vendor/lib64/libyuvenhance.so
 vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so
 vendor/lib64/mt6789/fake_serial_yuv_IdxMgr.so
 vendor/lib64/mt6789/fake_serial_yuv_tuning.so
@@ -1345,35 +1363,6 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
-
-# DTS
-vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin
-vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin
-vendor/etc/dts/beq44
-vendor/etc/dts/beq48
-vendor/etc/dts/ctc
-vendor/etc/dts/current_lineout48k
-vendor/etc/dts/current_speaker48k
-vendor/etc/dts/current_usb44k
-vendor/etc/dts/current_usb48k
-vendor/etc/dts/customer.cfg
-vendor/etc/dts/dts_audio_settings
-vendor/etc/dts/games_accessory44
-vendor/etc/dts/games_accessory48
-vendor/etc/dts/games_speaker48
-vendor/etc/dts/movie_accessory44
-vendor/etc/dts/movie_accessory48
-vendor/etc/dts/movie_speaker48
-vendor/etc/dts/music_accessory44
-vendor/etc/dts/music_accessory48
-vendor/etc/dts/music_speaker48
-vendor/etc/dts/off_speaker48
-vendor/lib/libdts-eagle-shared.so
-vendor/lib/libdtsdsec.so
-vendor/lib/soundfx/libdtsaudio.so
-vendor/lib64/libdts-eagle-shared.so
-vendor/lib64/libdtsdsec.so
-vendor/lib64/soundfx/libdtsaudio.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -1861,6 +1850,30 @@ vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/libmmagent.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
+
+# Missing blobs (will arrange it later)
+vendor/lib/libmtkhardware_legacy.so
+vendor/lib64/libmtkhardware_legacy.so
+vendor/lib/libmtk_bsg.so
+vendor/lib64/libmtk_bsg.so
+vendor/lib/libminiui.so
+vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so
+vendor/lib/mt6789/libmtk_drvb.so
+vendor/lib64/libTranAutoColorLevel.so
+vendor/lib64/libTranVideoSupeNightYuv.so
+vendor/lib64/libaipe_bokeh.so
+vendor/lib64/mt6789/libmtk_drvb.so
+vendor/lib64/libheichal.so
+vendor/lib64/libimagebuffer_wrapper.so
+vendor/lib64/libminiui.so
+vendor/lib64/libmtkisp_metadata.so
+vendor/lib64/libmtkisp_metadata_v2.so
+vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
+vendor/lib/libpixelflinger.so
+vendor/lib64/libTranExtImgThread.so
+vendor/lib64/libcolorlevel.so
+vendor/lib64/libpixelflinger.so
+vendor/lib64/libyuvenhance.so
 
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
