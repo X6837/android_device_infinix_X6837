@@ -156,7 +156,7 @@ TARGET_OTA_ASSERT_DEVICE := X6837,Infinix-X6837
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Vendor Security Patch
-VENDOR_SECURITY_PATCH := 2023-10-05
+VENDOR_SECURITY_PATCH := 2024-01-05
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -207,6 +207,3 @@ TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Inherit the proprietary files
 include vendor/infinix/X6837/BoardConfigVendor.mk
-
-# Firmware
-include vendor/infinix/X6837-firmware/Android.mk
