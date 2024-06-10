@@ -61,8 +61,10 @@ PRODUCT_PACKAGES += \
     audio_policy.stub
 
 PRODUCT_PACKAGES += \
-    libalsautils \
     libaudiofoundation.vendor \
+    libalsautils \
+    libnbaio_mono \
+    libtinycompress \
     libdynproc \
     libhapticgenerator
 

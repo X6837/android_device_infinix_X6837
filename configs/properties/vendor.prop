@@ -262,31 +262,3 @@ ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m_6789
-
-#
-# Random stuffs
-#
-# Stock Stuff
-ro.vendor.rc=/vendor/etc/init/hw/
-# MTK Stuff
-ro.vendor.mtk_nn_baseline_support=1
-persist.vendor.factory.GB2312=no
-ro.surface_flinger.has_wide_color_display=true
-ro.vendor.mtk_fast_charging_support=1
-ro.vendor.mtk.sensor.support=yes
-ro.vendor.camera.isp.support.colorspace=1
-ro.vendor.mtk_sec_video_path_support=1
-ro.vendor.mtk_tee_gp_support=1
-ro.vendor.mtk_wfd_support=1
-ro.vendor.mtk_thermal_2_0=1
-ro.vendor.efuse_writer_enable=1
-ro.vendor.mtk_cam_security_support=0
-ro.vendor.mtk.c2.vdec.fmt.support.level=1
-ro.vendor.mtk_svp_on_mtee_support=2
-ro.netflix.bsp_rev=MTK6789-35965-1
-vendor.media.heif.highThreshold=20
-vendor.media.heif.feature.off=1
-ro.netflix.bsp_rev=MTK6789-35965-1
-ro.limit_cache.support=1
-ro.cur_max_process.val=72
-ro.vendor.mgk_name=mgk_64_entry_level_k510
