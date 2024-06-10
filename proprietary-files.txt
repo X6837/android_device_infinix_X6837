@@ -2027,6 +2027,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Power
+-vendor/etc/vintf/manifest/power-default.xml:vendor/etc/vintf/manifest/power-mtk.xml
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/bootperf.rc
 vendor/etc/init/init.fpsgo.rc

@@ -62,7 +62,7 @@ function blob_fixup {
         vendor/lib*/hw/audio.primary.mt6789.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
-        vendor/bin/hw/camerahalserver)
+        vendor/bin/hw/mt6789/camerahalserver)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.vibrator-service.mediatek)
