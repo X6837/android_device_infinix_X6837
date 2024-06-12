@@ -1101,14 +1101,6 @@ on property:persist.vendor.mediatek.fast_charging.support=*
 on boot
     insmod /vendor/lib/modules/fpsgo.ko
 
-# VSIM service (vendor OSI)
-service osi /system/bin/osi
-    class main
-    user root
-    disabled
-    oneshot
-    #seclabel u:r:osi:s0
-
 service vendor.charger /system/bin/charger
     class charger
     user system
@@ -1118,21 +1110,3 @@ service vendor.charger /system/bin/charger
     file /sys/fs/pstore/console-ramoops-0 r
     file /sys/fs/pstore/console-ramoops r
     file /proc/last_kmsg r
-
-#SPD: add resmonitor and smartpanel bind small core by rui.fu 20230117 start
-service spd_cpu_set_sh /vendor/bin/init.spd_cpu_set.sh
-    class main
-    user root
-    group root system
-    disabled
-    oneshot
-
-on property:sys.boot_completed=1
-    start spd_cpu_set_sh
-#SPD: add resmonitor and smartpanel bind small core by rui.fu 20230117 end
-
-#SPD: add for watermark_scale_factor at 20230302 start
-on property:sys.boot_completed=1
-    write /proc/sys/vm/watermark_scale_factor 200
-    setprop vendor.tran.cur_max_process 72
-#SPD: add for watermark_scale_factor at 20230302 end
