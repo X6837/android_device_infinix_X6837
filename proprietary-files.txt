@@ -89,10 +89,6 @@ vendor/lib64/libkaraoke.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
-# Audio (FX modules)
-vendor/lib/soundfx/libaudiopreprocessing_mtk.so
-vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
-
 # Audio Configs
 vendor/etc/audio_param/AudioParamOptions_mgvi.xml
 vendor/etc/audio_param/AudioParamOptions_vext.xml
