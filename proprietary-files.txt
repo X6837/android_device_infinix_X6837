@@ -1889,6 +1889,7 @@ vendor/lib64/libmvpu_runtime_pub.so
 vendor/lib64/libmvpuop_mtk_cv.so
 vendor/lib64/libmvpuop_mtk_nn.so
 vendor/lib64/libvpu.so
+vendor/lib64/libvpu5.so
 
 # Misc
 vendor/bin/hw/vendor.mediatek.hardware.tranHwInfo@1.0-service
