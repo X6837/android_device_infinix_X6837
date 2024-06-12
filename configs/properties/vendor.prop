@@ -1,3 +1,35 @@
+# Stock Stuff
+ro.vendor.rc=/vendor/etc/init/hw/
+
+# MTK Stuff
+persist.vendor.factory.GB2312=no
+ro.surface_flinger.has_wide_color_display=true
+ro.vendor.mtk_fast_charging_support=1
+ro.vendor.mtk.sensor.support=yes
+ro.vendor.camera.isp.support.colorspace=1
+ro.vendor.mtk_sec_video_path_support=1
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_wfd_support=1
+ro.vendor.mtk_thermal_2_0=1
+ro.vendor.efuse_writer_enable=1
+ro.vendor.mtk_cam_security_support=0
+ro.vendor.mtk.c2.vdec.fmt.support.level=1
+ro.vendor.mtk_svp_on_mtee_support=2
+ro.netflix.bsp_rev=MTK6789-35965-1
+vendor.media.heif.highThreshold=20
+vendor.media.heif.feature.off=1
+ro.limit_cache.support=1
+ro.cur_max_process.val=72
+ro.vendor.mgk_name=mgk_64_entry_level_k510
+ro.vendor.mtk_ovl_bringup=0
+ro.vendor.smvr.p2batch.vga=8
+ro.vendor.smvr.p2batch.hd=4
+ro.vendor.mtk_slow_motion_support=1
+ro.surface_flinger.has_HDR_display=false
+ro.vendor.mtk_video_hevc_enc_support=1
+persist.vendor.mdrsra_v2_support=1
+persist.vendor.xfrm_support=1
+
 # APK Verity
 ro.apk_verity.mode=2
 
@@ -208,29 +240,23 @@ ro.lmk.thrashing_limit=25
 ro.lmk.thrashing_limit_decay=50
 
 # Media
+debug.mediatek.disp_decompress=1
+debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=3072
-ro.vendor.iomanager.support=1
-ro.vendor.jpeg_decode_sw_opt=2
-vendor.mtk.vdec.waitkeyframeforplay=9
-vendor.streaminvow.pcm.dump=1
+ro.vendor.jpeg_decode_sw_opt=1
+ro.vendor.mtk_config_max_dram_size=0x800000000
+ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
-ro.vendor.mtk_slow_motion_support=1
-ro.vendor.mtk_hdr_video_support=1
-ro.vendor.mtk_hifiaudio_support=1
-ro.vendor.mtk_gamehdr_support=1
-ro.vendor.mtk_prefer_64bit_proc=0
-ro.vendor.smvr.p2batch.fhd=8
-ro.vendor.smvr.p2batch.hd=16
-ro.vendor.smvr.p2batch.vga=32
-ro.vendor.tgpa_resolution_tuner=1
-ro.vendor.tgpa_scaler_time=20200407
-ro.vendor.tgpa_scaler_version=1
+vendor.mtk.vdec.waitkeyframeforplay=9
 
 # MediaTek
 ro.soc.manufacturer=Mediatek
 ro.vendor.mediatek.platform=MT6789
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
 ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V15.102_reallytek.s0mp1rc.k61v1.64.bsp_P21
+
+# Misc
+ro.vendor.mtk_gwsd_capability=1
 
 # Neural Networks
 debug.mtk_tflite.target_nnapi=29
