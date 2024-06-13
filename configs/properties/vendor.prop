@@ -1,6 +1,3 @@
-# Stock Stuff
-ro.vendor.rc=/vendor/etc/init/hw/
-
 # MTK Stuff
 persist.vendor.factory.GB2312=no
 ro.surface_flinger.has_wide_color_display=true
