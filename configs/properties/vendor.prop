@@ -257,7 +257,7 @@ vendor.mtk.vdec.waitkeyframeforplay=9
 ro.soc.manufacturer=Mediatek
 ro.vendor.mediatek.platform=MT6789
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1
-ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V15.102_reallytek.s0mp1rc.k61v1.64.bsp_P21
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V15.102_reallytek.s0mp1rc.k61v1.64.bsp_P31
 
 # Misc
 ro.vendor.mtk_gwsd_capability=1
