@@ -161,7 +161,7 @@ TARGET_OTA_ASSERT_DEVICE := X6837,Infinix-X6837
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
 # Vendor Security Patch
-VENDOR_SECURITY_PATCH := 2024-01-05
+VENDOR_SECURITY_PATCH := 2024-03-05
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
