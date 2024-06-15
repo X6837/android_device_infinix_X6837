@@ -1771,6 +1771,10 @@ system/lib64/libvt_avsync.so|6593f835b38cef623d4d20aa5cd553904415b41d
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|b18588a930087bdf97ab75937113464221ff8128
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|fd5431b7f270c6e0083a0825571a705d87691dc6
 
+# HotwordEnrollment - from fleur-user 13 TP1A.220624.014 V816.0.2.0.TKEINXM release-keys 
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar|7549028e83df9783ea5c7fbf78e5d904e2de0cf7
+
 # Keymaster
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/bin/kmsetkey_ca.trustonic
