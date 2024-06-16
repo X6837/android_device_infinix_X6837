@@ -113,7 +113,7 @@ function blob_fixup {
             "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
             ;;
         system_ext/lib64/libsource.so)
-            grep -q libui_shim.so "$2" || "$PATCHELF" --add-needed libui_shim.so "$2"
+            grep -q libshim_ui.so "$2" || "${PATCHELF}" --add-needed libshim_ui.so "${2}}"
             ;;
     esac
 }
