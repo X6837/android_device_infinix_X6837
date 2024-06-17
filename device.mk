@@ -269,8 +269,14 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.1.vendor \
-    libcodec2_hidl@1.2.vendor \
+	android.hardware.media.c2@1.0.vendor:64 \
+	android.hardware.media.c2@1.1.vendor:64 \
+	android.hardware.media.c2@1.2.vendor:64 \
+	libcodec2_hidl@1.2.vendor:64 \
+	libcodec2_hidl_plugin:64 \
+	libcodec2_vndk.vendor:64 \
+	libeffects:64 \
+    libeffectsconfig.vendor:64 \
     libavservices_minijail_vendor \
     libstagefright_softomx_plugin.vendor \
     libsfplugin_ccodec_utils.vendor \
