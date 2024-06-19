@@ -192,14 +192,18 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.allocator@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.allocator@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
+    libhwbinder \
     libhwbinder.vendor
 
 # IMS
 PRODUCT_BOOT_JARS += \
+    mediatek-carrier-config-manager \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -332,10 +336,6 @@ PRODUCT_PACKAGES += \
 # Lineage-Specific Overlays
 PRODUCT_PACKAGES += \
 	ApertureOverlay
-
-# Pcap
-PRODUCT_PACKAGES += \
-    libpcap.vendor
     
 # Permissions
 PRODUCT_COPY_FILES += \

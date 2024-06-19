@@ -21,22 +21,30 @@ vendor/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 
 # Audio
+vendor/etc/AudioLog_dynamic.xml
+vendor/bin/audiocmdservice_atci
+vendor/etc/init/audiocmdservice_atci.rc
 vendor/lib/hw/audio.primary.mediatek.so
 vendor/lib/hw/audio.r_submix.mediatek.so
+vendor/lib/audio_common-aidl-cpp.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
-vendor/lib/libaudio_param_parser-vnd.so
-vendor/lib/libaudiocompensationfilter_vendor.so
+vendor/lib/libaudioclient_aidl_conversion.so
 vendor/lib/libaudiocompensationfilterc.so
-vendor/lib/libaudiocomponentengine_vendor.so
+vendor/lib/libaudiocompensationfilter_vendor.so
 vendor/lib/libaudiocomponentenginec.so
+vendor/lib/libaudiocomponentengine_vendor.so
 vendor/lib/libaudiocustparam_vendor.so
 vendor/lib/libaudiodcrflt_vendor.so
 vendor/lib/libaudiofmtconv.so
+vendor/lib/libaudiofoundation.so
 vendor/lib/libaudioloudc.so
 vendor/lib/libaudioprimarydevicehalifclient.so
+vendor/lib/libaudiosmartpamtk.so
 vendor/lib/libaudiotoolkit_vendor.so
+vendor/lib/libaudio_param_parser-vnd.so
+vendor/lib/libtinycompress.so
 vendor/lib/libaurisysdemo.so
 vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libblisrc32_vendor.so
@@ -53,23 +61,31 @@ vendor/lib/libspeech_enh_lib.so
 vendor/lib/libkaraoke.so
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/libTransNS.so
+vendor/lib/soundfx/libaudiopreprocessing.so
+vendor/lib/soundfx/libaudiopreprocessing_mtk.so
+vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
 vendor/lib64/hw/audio.primary.mediatek.so
 vendor/lib64/hw/audio.r_submix.mediatek.so
+vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_iir.so
 vendor/lib64/lib_speech_enh.so
-vendor/lib64/libaudio_param_parser-vnd.so
-vendor/lib64/libaudiocompensationfilter_vendor.so
+vendor/lib64/libaudioclient_aidl_conversion.so
 vendor/lib64/libaudiocompensationfilterc.so
-vendor/lib64/libaudiocomponentengine_vendor.so
+vendor/lib64/libaudiocompensationfilter_vendor.so
 vendor/lib64/libaudiocomponentenginec.so
+vendor/lib64/libaudiocomponentengine_vendor.so
 vendor/lib64/libaudiocustparam_vendor.so
 vendor/lib64/libaudiodcrflt_vendor.so
 vendor/lib64/libaudiofmtconv.so
+vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudioloudc.so
 vendor/lib64/libaudioprimarydevicehalifclient.so
+vendor/lib64/libaudiosmartpamtk.so
 vendor/lib64/libaudiotoolkit_vendor.so
+vendor/lib64/libaudio_param_parser-vnd.so
+vendor/lib64/libtinycompress.so
 vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
@@ -86,6 +102,8 @@ vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/libTransNS.so
 vendor/lib64/libkaraoke.so
+vendor/lib64/soundfx/libaudiopreprocessing.so
+vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
@@ -1231,6 +1249,10 @@ vendor/lib64/libtrancamJsonConvertor.so
 vendor/lib64/libtrancam_filelockmgr.so
 vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so
 
+# Charger
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+
 # Chip
 vendor/bin/chipinfo
 vendor/etc/init/chipinfo_init.rc
@@ -1247,6 +1269,8 @@ vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/etc/AbnormalDisplayLog_dynamic.xml
+vendor/etc/ft8725_fhdp_dsi_vdo_txd_inx_120hz_x6837_cust_color.xml
+vendor/etc/ili7807s_fhdp_dsi_vdo_tm_tm_120hz_x6837_cust_color.xml
 vendor/etc/VideoLog_dynamic.xml
 vendor/lib/egl/mt6789/libGLES_mali.so
 vendor/lib/egl/egl.cfg
@@ -1437,6 +1461,14 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/vendor.fpsensor.rc
 -vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
 vendor/lib64/hw/fpsensor_fingerprint.default.so
+vendor/etc/init/vendor.goodix.rc
+vendor/lib64/hw/fpsensor_fingerprint.default.so
+vendor/lib64/hw/gf_fingerprint.default.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_factory_test.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
 # Firmware
 vendor/firmware/BT_FW.cfg
@@ -1740,37 +1772,6 @@ vendor/lib64/mt6789/libmnl.so
 vendor/lib64/librpc.so
 vendor/lib64/libviagpsrpc.so
 
-# IMS - from fleur-user 13 TP1A.220624.014 V816.0.2.0.TKEINXM release-keys
-system/bin/vtservice|139ddac4f4c264c105dd8e1e0c658ef653faeb32
-system/etc/init/init.vtservice.rc|abcbc3ffc316b8f1cedffa949aac3b46670d64bc
--system/framework/mediatek-common.jar|276abb5bbfb88d1726718606b315881ca8571824
--system/framework/mediatek-framework.jar|f2393f824e72353191c7f2bea7d685a59a013792
--system/framework/mediatek-ims-base.jar|bcc65d4fd5e7534f2a0aa122908454df00591cfa
--system/framework/mediatek-ims-common.jar|fd0ee39291f2ed79b3e2730763998c4b6e55e591
--system/framework/mediatek-ims-extension-plugin.jar|b91e54270047b6d91f606136b7203255198952aa
--system/framework/mediatek-telecom-common.jar|8843bbf44ce1d005bee88e659177055d4babb137
--system/framework/mediatek-telephony-base.jar|79cf518b2e9e528937e969ab244c31ce17b9e7dd
--system/framework/mediatek-telephony-common.jar|b0e144d983d70791b4e058d15f7dd06ab1b72f73
--system/framework/mediatek-wfo-legacy.jar|056252059335b220c1fc2fde208fdf30cb6bb629
-system/lib64/libcomutils.so|454be3958e2dc3a014a7cfa360e309ab5d3a1762
-system/lib64/libimsma.so|a6320cc23db2a3aa50ce0655a30a264d595e3752
-system/lib64/libimsma_adapt.so|5d691a089432f893ef81a87a2104927f75aa8762
-system/lib64/libimsma_rtp.so|0e2b821862b126a8ae7fb9e2725ef2ce602ad610
-system/lib64/libimsma_socketwrapper.so|f63849d08340c59153b99d18b9cfdbc90ef7d1e7
-system/lib64/libmtk_vt_service.so|0452033533efd3bae747effe5d87208c2147f9ee
-system/lib64/libmtk_vt_wrapper.so|d44766b036b8fdaeff6079de7624295666d2352b
-system/lib64/libmtkperf_client.so|701883c0d23c4e27ffbccca4991bba3efe205c44
-system/lib64/libsignal.so|ca01f8558058694baad33ee7b63290d03ca6aa9c
-system/lib64/libsink.so|690da4593a64391a10a6b3cefa0b5327e50dbb16
-system/lib64/libsource.so|2eadca9a7a2a02ad8ab08b8f776d01609f55532a
-system/lib64/libvcodec_cap.so|aacd6e4afe463fed87265b435910af0d80425c7a
-system/lib64/libvcodec_capenc.so|e4696c115b92c03f986f1abb76ebf886d8f09c5c
-system/lib64/libvsim-adaptor-client.so|2332f7632bb4cf20b99cfcda10a4cb8fb904e59d
-system/lib64/libvt_avsync.so|6593f835b38cef623d4d20aa5cd553904415b41d
--system/priv-app/ImsService/ImsService.apk|aad4e1c1ce34339a2a3dc0fa4bc709d970a04c64
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so|b18588a930087bdf97ab75937113464221ff8128
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|fd5431b7f270c6e0083a0825571a705d87691dc6
-
 # HotwordEnrollment - from fleur-user 13 TP1A.220624.014 V816.0.2.0.TKEINXM release-keys 
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
 -system_ext/framework/com.android.hotwordenrollment.common.util.jar|7549028e83df9783ea5c7fbf78e5d904e2de0cf7
@@ -1821,12 +1822,14 @@ vendor/lib64/libvpu.so
 vendor/etc/mtk_omx_core.cfg
 vendor/lib/libMtkOmxAdpcmDec.so
 vendor/lib/libMtkOmxAlacDec.so
+vendor/lib/libMtkOmxApeDec.so
 vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libstagefrighthw.so
+vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libstagefrighthw.so
 
 # Media (C2)
@@ -2050,16 +2053,75 @@ vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
 # Radio
 vendor/bin/hw/mtkfusionrild
+vendor/bin/hw/vtservice_hidl
+vendor/bin/atcid
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
 vendor/bin/gsm0710muxd
-vendor/etc/apdb/APDB_MT6789___W2333
-vendor/etc/apdb/APDB_MT6789___W2333_ENUM
+vendor/bin/rcs_volte_stack
+vendor/bin/volte_clientapi_ua
+vendor/bin/volte_rcs_ua
+vendor/etc/init/atcid.rc
 vendor/etc/init/gsm0710muxd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
+vendor/etc/init/init.vtservice_hidl.rc
 vendor/etc/init/mtkrild.rc
-vendor/etc/init/muxreport.rc
+vendor/etc/init/volte_clientapi_ua.rc
+vendor/lib/libcapctrl.so
+vendor/lib/libcares_naptr.so
+vendor/lib/libcarrierconfig.so
+vendor/lib/libccci_util.so
+vendor/lib/libmnetlink_v104.so
+vendor/lib/libmtkares.so
+vendor/lib/libmtkcutils.so
+vendor/lib/libmtkhardware_legacy.so
+vendor/lib/libmtknetutils.so
+vendor/lib/libmtkproperty.so
+vendor/lib/libmtkrillog.so
+vendor/lib/libmtkspparser.so
+vendor/lib/libmtksysutils.so
+vendor/lib/librcs_interface.so
+vendor/lib/librcs_volte_core.so
+vendor/lib/libsysenv.so
+vendor/lib64/libcapctrl.so
+vendor/lib64/libcares_naptr.so
+vendor/lib64/libcarrierconfig.so
+vendor/lib64/libccci_util.so
+vendor/lib64/libmipc.so
+vendor/lib64/libmnetlink_v104.so
+vendor/lib64/libmtk-fusion-ril-prop-vsim.so
+vendor/lib64/libmtk-ril.so
+vendor/lib64/libmtkares.so
+vendor/lib64/libmtkconfig.so
+vendor/lib64/libmtkconfigutils.so
+vendor/lib64/libmtkcutils.so
+vendor/lib64/libmtkhardware_legacy.so
+vendor/lib64/libmtkmipc-ril.so
+vendor/lib64/libmtknetcap.so
+vendor/lib64/libmtknetutils.so
+vendor/lib64/libmtkproperty.so
+vendor/lib64/libmtkrillog.so
+vendor/lib64/libmtkrilutils.so
+vendor/lib64/libmtkspparser.so
+vendor/lib64/libmtksysutils.so
+vendor/lib64/libmtktinyxml.so
+vendor/lib64/libmtkutils.so
+vendor/lib64/libratconfig.so
+vendor/lib64/librilfusion.so
+vendor/lib64/libstorage_otp.so
+vendor/lib64/libsysenv.so
+vendor/lib64/libtrm.so
+vendor/lib64/libvia-ril.so
+vendor/lib64/libviamipc-ril.so
+vendor/lib64/libwpfa.so
+vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
+vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
+
+# Radio (Configs|Vendor)
+vendor/etc/apdb/APDB_MT6789___W2333
+vendor/etc/apdb/APDB_MT6789___W2333_ENUM
 vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
 vendor/etc/ecc_list_OP02.xml
@@ -2071,71 +2133,54 @@ vendor/etc/ecc_list_OP20.xml
 vendor/etc/ecc_list_OP236.xml
 vendor/etc/ecc_list_preference.xml
 vendor/etc/ecc_list_tran2.xml
+vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
-vendor/etc/vendor-apns-conf.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
-vendor/lib/libmtkcutils.so
-vendor/lib/libmtkproperty.so
-vendor/lib/libmtkrillog.so
-vendor/lib64/libcares_naptr.so
-vendor/lib64/libcarrierconfig.so
-vendor/lib64/libccci_util.so
-vendor/lib64/libmipc.so
-vendor/lib64/libmnetlink_v104.so
-vendor/lib64/libmtk-ril.so
-vendor/lib64/libmtkares.so
-vendor/lib64/libmtkconfig.so
-vendor/lib64/libmtkconfigutils.so
-vendor/lib64/libmtkcutils.so
-vendor/lib64/libmtkhardware_legacy.so
-vendor/lib64/libmtknetcap.so
-vendor/lib64/libmtknetutils.so
-vendor/lib64/libmtkproperty.so
-vendor/lib64/libmtkrillog.so
-vendor/lib64/libmtkrilutils.so
-vendor/lib64/libmtksysutils.so
-vendor/lib64/libmtktinyxml.so
-vendor/lib64/libmtkutils.so
-vendor/lib64/libratconfig.so
-vendor/lib64/librilfusion.so
-vendor/lib64/libstorage_otp.so
-vendor/lib64/libsysenv.so
-vendor/lib64/libtrm.so
-vendor/lib64/libwpfa.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Radio (IMS)
-vendor/bin/hw/vtservice_hidl
-vendor/bin/rcs_volte_stack
-vendor/bin/volte_clientapi_ua
-vendor/bin/volte_imcb
-vendor/bin/volte_imsm_93
-vendor/bin/volte_md_status
-vendor/bin/volte_rcs_ua
-vendor/bin/volte_stack
-vendor/etc/init/init.volte_imcb.rc
-vendor/etc/init/init.volte_imsm_93.rc
-vendor/etc/init/init.volte_md_status.rc
-vendor/etc/init/init.volte_stack.rc
-vendor/etc/init/init.vtservice_hidl.rc
-vendor/etc/init/volte_clientapi_ua.rc
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib/libipsec_ims_shr.so
-vendor/lib/librcs_volte_core.so
-vendor/lib/libverno.so
-vendor/lib/libvolte_core_shr.so
-vendor/lib/libvolte_xdmc_shr.so
 vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib64/libipsec_ims_shr.so
-vendor/lib64/libverno.so
-vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# Radio (MTK-IMS)
+system/etc/init/init.vtservice.rc
+system/framework/mediatek-carrier-config-manager.jar
+system/framework/mediatek-common.jar
+system/framework/mediatek-framework.jar
+system/framework/mediatek-ims-base.jar
+system/framework/mediatek-ims-common.jar
+system/framework/mediatek-ims-extension-plugin.jar
+system/framework/mediatek-services.jar
+system/framework/mediatek-telecom-common.jar
+system/framework/mediatek-telephony-base.jar
+system/framework/mediatek-telephony-common.jar
+system/framework/mediatek-wfo-legacy.jar
+system/lib/libmtk_vt_wrapper.so
+system/lib/libmtkperf_client.so
+system/lib/libvcodec_cap.so
+system/lib/libvcodec_capenc.so
+system/lib64/libcomutils.so
+system/lib64/libimsma.so
+system/lib64/libimsma_adapt.so
+system/lib64/libimsma_rtp.so
+system/lib64/libimsma_socketwrapper.so
+system/lib64/libmtk_vt_service.so
+system/lib64/libmtk_vt_wrapper.so
+system/lib64/libmtkperf_client.so
+system/lib64/libsignal.so
+system/lib64/libsink.so
+system/lib64/libsource.so
+system/lib64/libvcodec_cap.so
+system/lib64/libvcodec_capenc.so
+system/lib64/libvt_avsync.so
+system/priv-app/ImsService/ImsService.apk
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:system/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:system/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
@@ -2209,8 +2254,11 @@ vendor/lib64/vendor.trustonic.tee@1.1.so
 # Thermal
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/thermal_core
+vendor/bin/thermal_intf
+vendor/etc/dar_thermal_core/thermal_core_config.json
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/init/init.thermal_core.rc
+vendor/etc/predthermallevel_rf.json
 vendor/etc/thermal/disable_skin_control.conf
 vendor/etc/thermal/disable_thermal.conf
 vendor/etc/thermal/disable_thermal_temp.conf
@@ -2226,6 +2274,9 @@ vendor/lib/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
+
+# Thermal-Hardware
+vendor/lib/hw/thermal_hal.so
 vendor/lib64/hw/thermal_hal.so
 
 # TNE
