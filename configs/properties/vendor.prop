@@ -25,6 +25,18 @@ ro.vendor.mtk_video_hevc_enc_support=1
 persist.vendor.mdrsra_v2_support=1
 persist.vendor.xfrm_support=1
 
+# ADB
+persist.adb.nonblocking_ffs=0
+
+# AEE
+ro.vendor.have_aee_feature=1
+persist.vendor.mtk.aee.filter=0
+
+# AF
+vendor.af.dynamic.sleeptime.enable=true
+vendor.af.pausewait.enable=false
+vendor.af.threshold.src_and_effect_count=5
+
 # APK Verity
 ro.apk_verity.mode=2
 
@@ -37,6 +49,7 @@ aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 
 # Bluetooth
+bluetooth.profile.asha.central.enabled=true
 bluetooth.device.class_of_device=90,2,12
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.avrcp.target.enabled=true
@@ -137,6 +150,8 @@ debug.sf.enable_hwc_vds=0
 debug.sf.latch_unsignaled=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
+ro.sf.blurs_are_expensive=1
+ro.opengles.version=196610
 ro.surface_flinger.uclamp.min=130
 ro.hardware.egl=meow
 ro.hardware.hwcomposer=mtk_common
@@ -186,6 +201,9 @@ ro.surface_flinger.set_idle_timer_ms=1100
 ro.surface_flinger.set_touch_timer_ms=3000
 ro.surface_flinger.set_display_power_timer_ms=1000
 
+# Fuse passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
 
@@ -198,6 +216,9 @@ ro.vendor.mtk_log_hide_gps=1
 # Keymaster
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.hardware.kmsetkey=trustonic
+
+# Logd
+ro.logd.kernel=false
 
 # MTE
 arm64.memtag.process.system_server=off
@@ -232,6 +253,11 @@ ro.vendor.mtk_sim_hot_swap_common_slot=1
 ro.vendor.mtk_single_bin_modem_support=1
 ro.vendor.mtk_world_phone_policy=0
 ro.vendor.sim_me_lock_mode=3
+
+# HWUI
+ro.hwui.render_ahead=20
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # IMS
 persist.vendor.ims_support=1

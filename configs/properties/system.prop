@@ -1,20 +1,9 @@
-# AEE
-ro.vendor.have_aee_feature=1
-persist.vendor.mtk.aee.filter=0
-
-# AF
-vendor.af.dynamic.sleeptime.enable=true
-vendor.af.pausewait.enable=false
-vendor.af.threshold.src_and_effect_count=5
 
 # Audio
 ro.audio.silent=0
 ro.audio.usb.period_us=16000
 ro.config.vc_call_vol_steps=9
 persist.vendor.anr.dumpthr=1
-
-# Bluetooth
-bluetooth.profile.asha.central.enabled=true
 
 # Brand
 Build.BRAND=MTK
@@ -25,12 +14,6 @@ vendor.camera.tran.nums=1
 
 # Charger
 ro.charger.enable_suspend=true
-
-# Dalvik
-dalvik.vm.dex2oat64.enabled=true
-
-# Fuse passthrough
-persist.sys.fuse.passthrough.enable=true
 
 # Dexopt
 dalvik.vm.dex2oat64.enabled=true
@@ -46,9 +29,6 @@ dalvik.vm.boot-dex2oat-threads=6
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
 dalvik.vm.image-dex2oat-threads=6
 
-# GPU
-ro.opengles.version=196610
-
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
@@ -57,14 +37,6 @@ persist.dbg.wfc_avail_ovr=1
 # Kernel
 ro.kernel.zio=38,108,105,16
 ro.iorapd.enable=false
-
-# Logging
-persist.log.tag.BufferQueueDump=I
-persist.log.tag.BufferQueueProducer=I
-persist.log.tag.GraphicBuffer=I
-persist.log.tag.SurfaceControl=I
-persist.log.tag.Telecom=I
-persist.log.tag.Telephony=I
 
 # Media
 debug.stagefright.c2inputsurface=-1
