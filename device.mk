@@ -164,7 +164,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.vendor:64
+    android.hardware.biometrics.fingerprint@2.1-service.mediatek
 
 # FM Radio
 PRODUCT_PACKAGES += \
