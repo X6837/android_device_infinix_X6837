@@ -74,7 +74,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml
-    
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
@@ -200,7 +200,6 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_BOOT_JARS += \
-    mediatek-carrier-config-manager \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
