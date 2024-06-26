@@ -1277,20 +1277,12 @@
             <kctl name="UL5_CH2 ADDA_UL_CH2" value="0" />
         </path>
         <path name="ultrasound-proximity" value="turnon">
-            <kctl name="Ultrasound Custom Setting 4" value="1" />
-            <kctl name="Ultrasound Mode" value="2370" />
         </path>
         <path name="ultrasound-proximity" value="turnoff">
-            <kctl name="Ultrasound Mode" value="0"  />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnon">
-            <kctl name="Ultrasound Custom Setting 4" value="1" />
-            <kctl name="Ultrasound Mode" value="2350" />
-            <kctl name="Ultrasound Log Level" value="7" />
         </path>
         <path name="ultrasound-proximity-speaker" value="turnoff">
-            <kctl name="Ultrasound Mode" value="0"  />
-            <kctl name="Ultrasound Log Level" value="7" />
         </path>
     </mixercontrol>
 </root>
