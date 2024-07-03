@@ -7,6 +7,9 @@
 DEVICE_PATH := device/infinix/X6837
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 
+# A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
