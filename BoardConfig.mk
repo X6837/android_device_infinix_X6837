@@ -4,9 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Include the common OEM chipset BoardConfig.
-include device/transsion/mt6789-common/BoardConfigCommon.mk
-
 # Boot image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 

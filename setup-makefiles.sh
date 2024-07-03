@@ -8,9 +8,29 @@
 
 set -e
 
-export DEVICE=X6837
-export DEVICE_COMMON=mt6789-common
-export VENDOR=infinix
-export VENDOR_COMMON=transsion
+DEVICE=X6837
+VENDOR=infinix
 
-"./../../${VENDOR_COMMON}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
+# Load extract_utils and do some sanity checks
+MY_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
+
+ANDROID_ROOT="${MY_DIR}/../../.."
+
+HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
+if [ ! -f "${HELPER}" ]; then
+    echo "Unable to find helper script at ${HELPER}"
+    exit 1
+fi
+source "${HELPER}"
+
+# Initialize the helper
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
+
+# Warning headers and guards
+write_headers
+
+write_makefiles "${MY_DIR}/proprietary-files.txt" true
+
+# Finish
+write_footers
