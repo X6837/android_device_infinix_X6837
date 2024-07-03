@@ -54,6 +54,8 @@ TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(CONFIGS_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(CONFIGS_PATH)/configs/properties/vendor.prop
 
 # Inherit the proprietary files
 include vendor/infinix/X6837/BoardConfigVendor.mk
