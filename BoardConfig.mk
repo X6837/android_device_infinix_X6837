@@ -22,6 +22,10 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 # Boot image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := X6837
+TARGET_NO_BOOTLOADER := true
+
 # Display
 TARGET_SCREEN_DENSITY := 396
 
@@ -51,6 +55,10 @@ BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/modules/*.ko)
 
 # Workaround to make lineage's soong generator work
 TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6789
+BOARD_HAS_MTK_HARDWARE := true
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/properties/product.prop
