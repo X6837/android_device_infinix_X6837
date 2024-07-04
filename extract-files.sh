@@ -105,6 +105,9 @@ function blob_fixup {
         vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
             "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
             ;;
+        system_ext/lib64/libsource.so)
+            grep -q libui_shim.so "$2" || "$PATCHELF" --add-needed libui_shim.so "$2"
+            ;;
     esac
 }
 
