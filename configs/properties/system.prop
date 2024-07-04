@@ -1,8 +1,13 @@
 # Audio
+ro.camera.sound.forced=0
 ro.audio.silent=0
 ro.audio.usb.period_us=16000
 ro.config.vc_call_vol_steps=9
 persist.vendor.anr.dumpthr=1
+
+# Blur
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
 
 # Brand
 Build.BRAND=MTK
@@ -28,6 +33,9 @@ dalvik.vm.boot-dex2oat-threads=6
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
 dalvik.vm.image-dex2oat-threads=6
 
+# Disable blur on app launch
+ro.launcher.blur.appLaunch=1
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
@@ -48,6 +56,13 @@ ro.vendor.mtk_omacp_support=1
 ro.vendor.mtk_flv_playback_support=1
 ro.vendor.mtk_telephony_add_on_policy=0
 
+# Misc 
+vendor.hbm.enable=true
+persist.vendor.dc_backlight.enable=false
+persist.vendor.power.dfps.level=0
+persist.vendor.night.charge=true
+persist.vendor.sensor.cali_sensor=111001100000000
+
 # Perf
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
@@ -58,6 +73,14 @@ security.perf_harden=1
 sys.ipo.disable=1
 sys.ipo.pwrdncap=2
 persist.sys.usic.support=true
+
+# SLA
+ro.vendor.net.enable_sla=1
+
+# RIL
+ro.vendor.radio.features_common=2
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
 
 # RIL Powersaving
 persist.radio.add_power_save=1
@@ -76,6 +99,12 @@ ro.sys.usb.charging.only=yes
 ro.sys.usb.mtp.whql.enable=0
 ro.sys.usb.storage.type=mtp
 ro.usb.connect.keycodes=100,200
+
+# VoLTE
+persist.dbg.allow_ims_off=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
 
 # WiFi
 ro.mediatek.wlan.p2p=1

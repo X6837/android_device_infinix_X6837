@@ -47,6 +47,8 @@ dalvik.vm.minidebuginfo=false
 # Audio
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
+persist.vendor.rm.debug.headsetmic=1
+persist.vendor.rm.debug.phonemic=1
 
 # Bluetooth
 bluetooth.profile.asha.central.enabled=true
@@ -323,11 +325,13 @@ ro.vendor.mtk.sensor.support=yes
 # Shutdown
 init.userspace_reboot.is_supported=true
 
-# USB
-ro.vendor.usb.kpoc_adb=0
-
 # TEE
+ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_trustonic_tee_support=1
+
+# USB
+persist.sys.usb.config=adb
+persist.adb.nonblocking_ffs=0
 
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
