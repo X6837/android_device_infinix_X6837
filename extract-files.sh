@@ -69,8 +69,7 @@ function blob_fixup {
         vendor/bin/mnld|\
         vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|\
         vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
-        vendor/lib64/mt6789/libaalservice.so|\
-        vendor/lib64/mt6789/libcam.utils.sensorprovider.so)
+        vendor/lib64/mt6789/libaalservice.so)
             "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
             ;;
         vendor/bin/hw/mt6789/camerahalserver)
