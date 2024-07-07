@@ -282,6 +282,10 @@ PRODUCT_PACKAGES += \
     android.hardware.security.rkp-V3-ndk.vendor \
     libcppbor_external.vendor:64
 
+# Libshims 
+PRODUCT_PACKAGES += \
+    libshim_sensors
+    
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.transsion
