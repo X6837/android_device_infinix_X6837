@@ -97,6 +97,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor
 
 PRODUCT_PACKAGES += \
+    libcamera_metadata.vendor \
     libdng_sdk.vendor \
     libexpat.vendor \
     libpng.vendor
