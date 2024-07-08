@@ -195,8 +195,9 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.mt6789 \
-    android.hardware.health-service.mt6789-recovery \
+    android.hardware.health@2.1-service \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl.recovery \
     charger_res_images_vendor
 
 # HIDL
