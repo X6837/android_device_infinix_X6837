@@ -98,6 +98,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
+    libcamera_metadata_shim \
     libdng_sdk.vendor \
     libexpat.vendor \
     libpng.vendor
@@ -444,6 +445,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio@1.6.vendor
+
+# Required for QPR3
+PRODUCT_PACKAGES += \
+    libjsoncpp.vendor \
+    libsqlite.vendor \
+    libdumpstateutil.vendor
 
 # Secure Element
 PRODUCT_PACKAGES += \
